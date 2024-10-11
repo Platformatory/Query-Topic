@@ -49,6 +49,7 @@ session.timeout.ms=45000
 
 
 Make sure to replace the placeholder values (&lt;bootstrap_server:port>, &lt;apikey>, and &lt;apisecret>) with your actual Kafka credentials.
+**Note:** The API key and secret provided must have permission to read all relevant topics and the group ID (which can be provided in the client.properties file). If no group ID is provided, then read permission must be granted to 'foo,' which is the default group ID.  
 
 
 ## Step 4: Run the *query-topic.py* Script with Input Parameters

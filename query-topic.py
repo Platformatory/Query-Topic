@@ -1,7 +1,5 @@
-from uuid import uuid4
 from confluent_kafka import Consumer, KafkaError, TopicPartition
 from datetime import datetime, timedelta
-from json import loads
 from configparser import ConfigParser, NoOptionError
 import argparse
 from confluent_kafka.admin import AdminClient
